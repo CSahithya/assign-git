@@ -1,0 +1,18 @@
+Sahithya Cherukuri(scheru20) --- Github Assignment---- SER 515
+
+1) What is a gitignore file and what should it include for a Java project?
+   A .gitignore file in github is used to ignore all the files and file extensions that need not be staged for a commit like any .idea or eclipse running tools that a developer might introduce in the local/remote repo to test the changes.
+   The .gitignore file for Java project mainly includes .class files so the compiled class files are not loaded and other files like *.log, *.ctxt, *.jar, *.war, *.nar, *.ear, *.zip, *.tar.gz, *.rar can also be added if they are present in the project as these files don't contribute to production as such.
+
+2) What does fast-forward in git mean?
+   When a merge directly corresponds to the changes/improvements on the very latest/recent version of the code/repository, then it's called fast-forward. It can identified from the last commit.
+   Example: Say developers A and B are both working on master remotely on different branches. A and B pull the latest code from master. A makes changes to it and pushes the changes after merging it. This kind of merge is called fast-forwarding. (when the code that A worked on and made changes to is the latest code that was pulled). Now, if B works on the code that was pulled before A's commits. This will not be fast forwarding as we have new commits and changes on master.
+
+3) Why should you have different branches?
+   To maintain a proper commit, merge history and to have a smooth integration process among all the working members of the team.
+   Having different branches makes it easy to trace back to the task/story. Modify/Remove it in-case of any breakage from merge.
+   When working on a team project, the main source code will have changes from different members of the team which needs to be continuously integrated to the base files. If the entire team works on the same branch then the continuous integration of the project becomes tedious as the members usually work on different tasks and changes in one file usually effects another file being used. And for this reason, to have a better integration, communication and tracking of the files, branches should be used.
+
+4) In a project how many remote Git repositories do you usually have?
+   As a developer I don't need more than one remote repository to work on as I can create multiple branches to work on different tasks (if required).
+   Although, we can definitely have more than one remote repository. If we consider a team working on a repository, each team member can have one remote copy of the repository.
